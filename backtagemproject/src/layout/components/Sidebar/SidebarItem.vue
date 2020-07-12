@@ -11,7 +11,7 @@
                </el-menu-item>
            </div>
        </el-submenu>
-       <el-menu-item :index="parentUrl+'/index'" v-if="opt.children.length == 1 & !opt.meta.one">
+       <el-menu-item :index="parentUrl+'/index'" v-if="opt.children.length == 1">
            <template class="list">
                {{opt.children[0].meta.title}}
            </template>

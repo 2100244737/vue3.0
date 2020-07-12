@@ -115,24 +115,24 @@
   }
 
   // mobile responsive
-  .mobile {
-    .main-container {
-      margin-left: 0px;
-    }
+  // .mobile {
+  //   .main-container {
+  //     margin-left: 0px;
+  //   }
 
-    .sidebar-container {
-      transition: transform .28s;
-      width: $sideBarWidth !important;
-    }
+  //   .sidebar-container {
+  //     transition: transform .28s;
+  //     width: $sideBarWidth !important;
+  //   }
 
-    &.hideSidebar {
-      .sidebar-container {
-        pointer-events: none;
-        transition-duration: 0.3s;
-        transform: translate3d(-$sideBarWidth, 0, 0);
-      }
-    }
-  }
+  //   &.hideSidebar {
+  //     .sidebar-container {
+  //       pointer-events: none;
+  //       transition-duration: 0.3s;
+  //       transform: translate3d(-$sideBarWidth, 0, 0);
+  //     }
+  //   }
+  // }
 
   .withoutAnimation {
 
@@ -151,13 +151,13 @@
     }
   }
 
-  .nest-menu .el-submenu>.el-submenu__title,
-  .el-menu-item {
-    &:hover {
-      // you can use $subMenuHover
-      background-color: $menuHover !important;
-    }
-  }
+  // .nest-menu .el-submenu>.el-submenu__title,
+  // .el-menu-item {
+  //   &:hover {
+  //     // you can use $subMenuHover
+  //     background-color: $menuHover !important;
+  //   }
+  // }
 
   // the scroll bar appears when the subMenu is too long
   >.el-menu--popup {

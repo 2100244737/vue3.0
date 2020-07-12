@@ -14,31 +14,31 @@
                         mode="vertical"
                         router
                 >
-<!--                    <el-menu-item index="/Home">-->
-<!--                        <i class="el-icon-document"></i>-->
-<!--                        <span slot="title">首页</span>-->
-<!--                    </el-menu-item>-->
-<!--                    <el-submenu index="/system">-->
-<!--                        <template slot="title">-->
-<!--                            <i class="el-icon-location"></i>-->
-<!--                            <span slot="title">系统管理</span>-->
-<!--                        </template>-->
-<!--                        <el-menu-item index="/system/user">用户管理</el-menu-item>-->
-<!--                        <el-menu-item index="/system/role">角色管理</el-menu-item>-->
-<!--                    </el-submenu>-->
-<!--                    <el-menu-item index="/about">-->
-<!--                        <i class="el-icon-menu"></i>-->
-<!--                        <span slot="title">关于</span>-->
-<!--                    </el-menu-item>-->
-                    <SidebarItem v-for="(item, index) in routes" :parentUrl="item.path" :opt="item" :key="index"></SidebarItem>
+                   <el-menu-item index="/Home">
+                       <i class="el-icon-document"></i>
+                       <span slot="title">首页</span>
+                   </el-menu-item>
+                   <el-submenu index="/system">
+                       <template slot="title">
+                           <i class="el-icon-location"></i>
+                           <span slot="title">系统管理</span>
+                       </template>
+            <el-menu-item index="/system/user">用户管理</el-menu-item>
+            <el-menu-item index="/system/role">角色管理</el-menu-item>
+                    </el-submenu>
+                   <el-menu-item index="/about">
+                       <i class="el-icon-menu"></i>
+                      <span slot="title">关于</span>
+                 </el-menu-item>
+                    <!-- <SidebarItem v-for="(item, index) in routes" :parentUrl="item.path" :opt="item" :key="index"></SidebarItem> -->
                 </el-menu>
-            </el-scrollbar>
+            </el-scrollbar> 
     </div>
 </template>
 
 <script>
     import variables from '@/styles/variables.scss';
-    import SidebarItem from "./SidebarItem";
+    //import SidebarItem from "./SidebarItem";
     export default {
         name: "index",
         data () {
@@ -49,7 +49,7 @@
             }
         },
         components: {
-            SidebarItem
+            // SidebarItem
         },
         computed: {
             routes () {
